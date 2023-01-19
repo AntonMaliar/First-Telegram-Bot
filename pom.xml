@@ -8,14 +8,19 @@
 		<version>3.0.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>anton.maliar</groupId>
 	<artifactId>first-bot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>first-bot</name>
 	<description>my first telegram bot</description>
+
 	<properties>
 		<java.version>17</java.version>
+		<telegram.version>6.4.0</telegram.version>
+		<lombok.version>1.18.24</lombok.version>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -27,6 +32,20 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.telegram</groupId>
+			<artifactId>telegrambots</artifactId>
+			<version>${telegram.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
 	</dependencies>
 
 	<build>
