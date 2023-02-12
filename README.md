@@ -1,0 +1,1 @@
+This is telegram bot where you can get weather forecast. You input your location and bot uses third-party api to get latitude and longitude and then another third-party api to get weather forecast.
